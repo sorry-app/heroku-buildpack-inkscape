@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+add-apt-repository universe
 add-apt-repository ppa:inkscape.dev/stable
 apt-get update
-apt-get install inkscape
+apt install inkscape
 
 function error() {
 	echo -e " !     $*" >&2
