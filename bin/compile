@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-apt-get update
-apt-get install software-properties-common
-apt-get update
+apt update
+apt install software-properties-common
+apt update
 add-apt-repository universe
 add-apt-repository ppa:inkscape.dev/stable
-apt-get update
+apt update
 apt install inkscape
 
 function error() {
