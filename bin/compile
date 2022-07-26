@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-apt update
-apt install software-properties-common
-apt update
+apt-get update
+apt-get -y install software-properties-common
+apt-get update
 add-apt-repository universe
 add-apt-repository ppa:inkscape.dev/stable
-apt update
-apt install inkscape
+apt-get update
+apt-get -y install inkscape
 
 function error() {
 	echo -e " !     $*" >&2
